@@ -1,0 +1,73 @@
+nav{
+    max-width: 100vw;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 0px;
+    grid-template-areas: 
+        "logo btnMenu"
+        "list list"
+    ;
+    transition: all;
+    transition-duration: .3s;
+    background-color: var(--VeryLightGray);
+    position: fixed;
+}
+.logo{
+    grid-area: logo;
+    justify-self: center;
+    padding: .5rem;
+    justify-self: flex-start;
+    align-self: center;
+}
+.btnMenu{
+    grid-area: btnMenu;
+    background-color: transparent;
+    border:none;
+    justify-self: flex-end;
+    
+}
+.list{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    align-items: center;
+    grid-area: list;
+    padding: 0;
+    font-size: 1.2rem;
+    background-image: url('../../assets/images/bg-pattern-mobile-nav.svg');
+    background-color: var(--VeryDarkViolet);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.list>li{
+    margin: 1.5rem;
+}
+.list>li>a{
+    text-decoration: none;
+    color:var(--VeryLightGray);
+    text-transform: uppercase;
+    
+}
+.menuDisplayed{
+    grid-template-rows: 3rem 0px;
+    animation-name: displayingMenu;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier();
+}
+.list>li>a>.enfasis{
+    border: 2px solid var(--VeryLightGray);
+    padding: 1rem 5rem;
+}
+@keyframes displayingMenu {
+    from{
+        grid-template-rows: 3rem 0rem;
+    }
+    to{
+        grid-template-rows: 3rem 80vh;
+    }
+}
