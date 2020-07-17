@@ -1,0 +1,36 @@
+.hero{
+    width: 100vw;
+    transform: translateY(2rem);
+    display: flex;
+    flex-direction: column;
+}
+.hero>img{
+    width: 100vw;
+}
+.quote{
+    background-color: var(--DarkViolet);
+    padding: 3rem 10px;
+    box-sizing: border-box;
+    color: var(--VeryLightGray);
+    text-align: center;
+    background-image:   url('../../assets/images/bg-pattern-intro-left-mobile.svg') , 
+                        url('../../assets/images/bg-pattern-intro-right-mobile.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left,right;
+    background-position-y: top, bottom;
+    
+}
+.quote>h1{
+    margin-top: 0;
+    font-family: 'DM Serif Display', serif;
+
+    font-weight: 400;
+    font-size: 3.2rem;
+}
+.quote>p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--VeryLightGray); 
+}
+
+
