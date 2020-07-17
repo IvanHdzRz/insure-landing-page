@@ -23,12 +23,12 @@ class Navigation extends React.Component{
                     <img src={logo} alt='logo'/>
                 </div>
                 
-                    <ul className={Styles.list}>
-                        <li><a href='#'>How we work</a></li>
-                        <li><a href='#'>Blog</a></li>
-                        <li><a href='#'>Account</a></li>
-                        <li><a href='#'> <span  className={Styles.enfasis}> View Plans</span></a></li>
-                    </ul>
+                <ul className={Styles.list}>
+                    <li><a href='#'>How we work</a></li>
+                    <li><a href='#'>Blog</a></li>
+                    <li><a href='#'>Account</a></li>
+                    <li><a href='#'> <span  className={Styles.enfasis}> View Plans</span></a></li>
+                </ul>
                 
                 <button className={Styles.btnMenu} onClick={this.changeMenu}>
                     <img  src={isShowing?closeMenu:showMenu} alt='icon-menu'/>
