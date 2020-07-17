@@ -1,19 +1,19 @@
+/*Estilos del nav en general (logo boton de hamburguesa y lista de links)*/
 nav{
     max-width: 100vw;
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3rem 0px;
-    grid-template-areas: 
-        "logo btnMenu"
-        "list list"
-    ;
     transition: all;
     transition-duration: .3s;
     background-color: var(--VeryLightGray);
     position: fixed;
+    display: flex;
+    flex-wrap:wrap;
+
 }
+
 .logo{
+    width: 80vw;
+    box-sizing: border-box;
     grid-area: logo;
     justify-self: center;
     padding: .5rem;
@@ -21,6 +21,8 @@ nav{
     align-self: center;
 }
 .btnMenu{
+    width: 20vw;
+    box-sizing: border-box;
     grid-area: btnMenu;
     background-color: transparent;
     border:none;
@@ -28,6 +30,8 @@ nav{
     
 }
 .list{
+    width: 100vw;
+    height:0;
     overflow: hidden;
     list-style: none;
     display: flex;
@@ -52,22 +56,42 @@ nav{
     text-transform: uppercase;
     
 }
-.menuDisplayed{
-    grid-template-rows: 3rem 0px;
+.list>li>a>.enfasis{
+    border: 2px solid var(--VeryLightGray);
+    padding: 1rem 5rem;
+}
+
+.initial{
+    height: 0;
+}
+/*estilos de animaciones para el despliegue y ocultamiento del menu*/
+.displayList{
+    
     animation-name: displayingMenu;
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier();
 }
-.list>li>a>.enfasis{
-    border: 2px solid var(--VeryLightGray);
-    padding: 1rem 5rem;
+.hideList{
+    height: 40rem;
+    animation-name: hidingMenu;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier();
 }
 @keyframes displayingMenu {
     from{
-        grid-template-rows: 3rem 0rem;
+       height: 0;
     }
     to{
-        grid-template-rows: 3rem 80vh;
+        height: 40rem;
+    }
+}
+@keyframes hidingMenu {
+    from{
+        height: 40rem;
+    }
+    to{
+        height: 0;
     }
 }
