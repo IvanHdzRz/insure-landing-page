@@ -1,0 +1,15 @@
+.reason{
+    width:95vw;
+    box-sizing: border-box;
+    padding: .5rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+.reason>h3{
+    font-size: 1.8rem;
+    font-family: 'DM Serif Display', serif;
+    text-transform: capitalize;
+}
+.reason>p{
+    color: var(--DarkGrayishViolet)
+}
