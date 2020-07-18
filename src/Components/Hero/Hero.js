@@ -2,6 +2,7 @@ import React from 'react'
 import imgFamily from '../../assets/images/image-intro-desktop.jpg'
 import Title from '../Title'
 import Styles from './Hero.module.css'
+import ButtonAction from '../ButtonAction'
 const Hero =()=>{
     return(
         <div className={Styles.hero}>
@@ -16,7 +17,7 @@ const Hero =()=>{
                     help you find the plan that's righgt for you.
                     Ensure you and loved ones are protected.
                 </p>
-                <button>View plans</button>
+                <ButtonAction message='View plans'/>
             </div>
         </div>
     );

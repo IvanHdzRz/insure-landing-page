@@ -1,0 +1,10 @@
+.btnAction{
+    background-color: transparent;
+    color:var(--VeryLightGray);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border: 2px solid var(--VeryLightGray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
