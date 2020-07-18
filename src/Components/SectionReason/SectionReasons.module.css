@@ -1,0 +1,12 @@
+.sectionReasons{
+    margin: 0 auto;
+}
+.listOfReasons{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sectionReasons>h2{
+    text-align: center !important;
+}

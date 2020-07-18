@@ -1,5 +1,6 @@
 .reason{
     width:95vw;
+    max-width: 360px;
     box-sizing: border-box;
     padding: .5rem;
     text-align: center;

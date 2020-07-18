@@ -1,6 +1,6 @@
 .hero{
     width: 100vw;
-    transform: translateY(2rem);
+    
     display: flex;
     flex-direction: column;
 }
