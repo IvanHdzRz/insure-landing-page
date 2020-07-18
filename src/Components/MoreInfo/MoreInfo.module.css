@@ -1,0 +1,11 @@
+.MoreInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--DarkViolet);
+    background-image: url('../../assets/images/bg-pattern-how-we-work-mobile.svg');
+    background-position-x: right;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--VeryLightGray);
+}
