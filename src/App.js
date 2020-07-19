@@ -4,6 +4,7 @@ import Navigation from './Components/Navigation'
 import Hero from './Components/Hero'
 import SectionReasons from './Components/SectionReason'
 import MoreInfo from './Components/MoreInfo'
+import Footer from './Components/Footer'
 function App() {
   return (
     <div className='App'>
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <SectionReasons />
         <MoreInfo />
+        <Footer />
     </div>
   );
 }
