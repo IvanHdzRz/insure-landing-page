@@ -10,3 +10,11 @@
 .sectionReasons>h2{
     text-align: center !important;
 }
+@media only screen and (min-width:800px){
+    .sectionReasons{
+        padding: 5rem;
+    }
+    .sectionReasons>h2{
+        text-align: left !important;
+    }
+}

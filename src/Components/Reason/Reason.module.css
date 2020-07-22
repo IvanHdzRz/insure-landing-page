@@ -1,6 +1,6 @@
 .reason{
     width:95vw;
-    max-width: 360px;
+    max-width: 320px;
     box-sizing: border-box;
     padding: .5rem;
     text-align: center;
@@ -13,4 +13,20 @@
 }
 .reason>p{
     color: var(--DarkGrayishViolet)
+}
+@media only screen and (min-width:1200px){
+    .reason{
+        text-align: left;
+    }
+}
+@media only screen and (min-width:1600px){
+    .reason{
+        max-width: 400px;
+    }
+    .reason>h2{
+        font-size: 3rem !important;
+    }
+    .reason>p{
+        font-size: 1.5rem !important;
+    }
 }
