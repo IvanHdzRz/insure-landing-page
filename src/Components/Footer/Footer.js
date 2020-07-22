@@ -12,7 +12,7 @@ const Footer=()=>{
     
     return (
         <footer className={Styles.footer}>
-            <div className={'logo'}>
+            <div className={Styles.logo}>
                 <img src={logo} alt='logo'/>
             </div>
             
@@ -25,7 +25,7 @@ const Footer=()=>{
                 
             </div>
             <hr></hr>
-            <div className='communQuestions'>
+            <div className={Styles.communQuestions}>
                 {commonQuestions.map((question,i)=>{
                     return (
                         <div key={i} className={Styles.question}>
